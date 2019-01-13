@@ -1,0 +1,114 @@
+/* MIXIN VARS */
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: 769px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+// For Bootstrap
+@mixin xxsGrid {
+  /* Mobile Phone */
+  @media only screen and (max-width: 359px) {
+    @content;
+  }
+}
+
+@mixin xsGrid {
+  /* Mobile Phone */
+  @media only screen and (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin sGrid {
+  /* Mobile Phone Larger */
+  @media only screen and (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin mGrid {
+  /* Ipad portrait */
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin lGrid {
+  /* Ipad larger */
+  @media only screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin xlGrid {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin projector {
+  @media only screen and (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin clientsLaptop {
+  @media only screen and (min-width: 1366px) {
+    @content;
+  }
+}
+
+@mixin xxlGrid {
+  @media only screen and (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin xxxlGrid {
+  @media only screen and (min-width: 2560px) {
+    @content;
+  }
+}
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+  font-size: $size;
+}
+
+@mixin noPad($direction) {
+  padding-#{$direction}: 0px;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Boilerplate-HTML-SCSS-Project",
+  "email": "thomijasir@gmail.com",
+  "version": "1.0.0",
+  "description": "Boilerplate For Developing HTML Page Using Scss With Powerfull Config",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp --production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Gulp",
+    "Boilerplate",
+    "Starting Project"
+  ],
+  "author": "Thomi Jasir",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^4.0.2",
+    "gulp-util": "^3.0.8"
+  }
+}
